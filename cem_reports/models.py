@@ -13,7 +13,7 @@ class Form(models.Model):
     updated_date = models.DateTimeField(
             blank=True, null=True)
 
-    def UpdatedOn(self):
+    def updated(self):
         self.updated_date = timezone.now()
         self.save()
 
